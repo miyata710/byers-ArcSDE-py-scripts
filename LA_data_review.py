@@ -1,7 +1,7 @@
-'''This is the code that has been used to go through and assess the WestCoast SDE. Various block of code have been
+'''This is the code that has been used to go through and assess the SDE. Various block of code have been
 written to perform tasks and are detailed below.'''
 
-'''Script / code block to take all LA feature classes and tables from the SDE connection and copy to a 
+'''Script / code block to take all  feature classes and tables from the SDE connection and copy to a 
 file GDB to be used for the data dictionary'''
 #import arcpy module
 import arcpy
@@ -21,7 +21,7 @@ tableList = arcpy.ListTables()
 
 ####Loop through list  of feature classes and copy/paste to new GDB
 for i in fcList:
-	result = i.startswith("WestCoast.LAADMIN")
+	result = i.startswith("xxxxxx")
 	print result
 	if result == True:
 		in_features = i
@@ -32,7 +32,7 @@ for i in fcList:
 
 ###Loop through list of tables and copy/paste to new GDB
 for i in tableList:
-	result = i.startswith("WestCoast.LAADMIN")
+	result = i.startswith("xxxxxx")
 	print result
 	if result == True:
 		in_features = i
