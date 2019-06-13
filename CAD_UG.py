@@ -75,9 +75,9 @@ f.write('Total segments requested for extraction: ' + str(len(listSegment)) + '\
 f.write('\n')
 
 #create variables for input feature classes
-inFC1 = '{0}\\WestCoast.LAADMIN.LA_HLDRoute'.format(existingDataPath)
-inFC2 = '{0}\\WestCoast.LAADMIN.LA_Structure_Telecom'.format(existingDataPath)
-inFC3 = '{0}\\WestCoast.LAADMIN.LA_LLD_Notes'.format(existingDataPath)
+inFC1 = '{0}\\xxxxxx'.format(existingDataPath)
+inFC2 = '{0}\\xxxxxx'.format(existingDataPath)
+inFC3 = '{0}\\xxxxxx'.format(existingDataPath)
 
 #create variables for SQL fieldnames
 fieldName1 = "SEGMENT_"
@@ -90,20 +90,11 @@ delimField2 = arcpy.AddFieldDelimiters(inFC2, fieldName2)
 delimField3 = arcpy.AddFieldDelimiters(inFC3, fieldName3)
 
 #variables for City and County boundary layer feature classes
-lyrCity = '{0}\\WestCoast.LAADMIN.LA_City_Boundaries'.format(existingDataPath)
-lyrCounty = '{0}\\WestCoast.LAADMIN.LA_County_Boundaries'.format(existingDataPath)
+lyrCity = '{0}\\xxxxxx'.format(existingDataPath)
+lyrCounty = '{0}\\xxxxxx'.format(existingDataPath)
 
 #full list of layers to be clipped to segment buffer for delivery
-inFCList = [r'WestCoast.LAADMIN.LA_Street_Lights', r'WestCoast.LAADMIN.LA_Other_Poles', r'WestCoast.LAADMIN.LA_Lane_Lines', 
- r'WestCoast.LAADMIN.LA_Gas_Valves', r'WestCoast.LAADMIN.LA_Fire_Hydrants',
- r'WestCoast.LAADMIN.LA_Fence', r'WestCoast.LAADMIN.LA_EOP', r'WestCoast.LAADMIN.LA_Driveway_Polygons', r'WestCoast.LAADMIN.LA_Driveway_Lines',
- r'WestCoast.LAADMIN.LA_Comm_Points', r'WestCoast.LAADMIN.LA_Bus_Stop_and_Pads',
- r'WestCoast.LAADMIN.LA_ADA_Ramp', r'WestCoast.LAADMIN.LA_HLDRoute', r'WestCoast.LAADMIN.LA_DemandPoints', r'WestCoast.LAADMIN.LA_HLDComments',
- r'WestCoast.LAADMIN.LA_Water_Points', r'WestCoast.LAADMIN.LA_Traffic_Substructure',
- r'WestCoast.LAADMIN.LA_Traffic_Lights', r'WestCoast.LAADMIN.LA_Storm_Drain_Points', r'WestCoast.LAADMIN.LA_Storm_Drain_Lines', r'WestCoast.LAADMIN.LA_Span',
- r'WestCoast.LAADMIN.LA_Sidewalk_Lines', r'WestCoast.LAADMIN.LA_Sewer_Manholes', r'WestCoast.LAADMIN.LA_Sewer_Lines', r'WestCoast.LAADMIN.LA_Power_Poles',
- r'WestCoast.LAADMIN.LA_Power_Points', r'WestCoast.LAADMIN.LA_Poles', r'WestCoast.LAADMIN.LA_Park_Strip',
- r'WestCoast.LAADMIN.LA_Paint_Symbols']
+inFCList = []
 
 for item in listSegment:
 	#applies change to segment folder name for re extractions
