@@ -27,10 +27,10 @@ folderPath = arcpy.GetParameterAsText (2)
 existingDataPath = arcpy.GetParameterAsText (3) 
 
 #Path to FC template in West Coast GDB
-templatePath = '{0}\\WestCoast.LAADMIN.TemplateTransmedia'.format(existingDataPath)
+templatePath = '{0}\\xxxxxx'.format(existingDataPath)
 
 #Path to HLD Route
-HLDroute = '{0}\\WestCoast.LAADMIN.LA_HLDRoute'.format(existingDataPath)
+HLDroute = '{0}\\xxxxxx'.format(existingDataPath)
 
 #Variable to store proper SQL expression
 expressionSQL = "HUB = '{0}'".format(HUB)
