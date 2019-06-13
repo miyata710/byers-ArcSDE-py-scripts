@@ -78,7 +78,7 @@ f.write('Total segments requested for extraction: ' + str(len(listSegment)) + '\
 f.write('\n')
 
 #create variables for input feature classes
-inFC1 = '{0}\\WestCoast.LAADMIN.LA_HLDRoute'.format(existingDataPath)
+inFC1 = '{0}\\xxxxxx'.format(existingDataPath)
 
 #create variables for SQL fieldnames
 fieldName1 = "SEGMENT_"
@@ -87,8 +87,7 @@ fieldName1 = "SEGMENT_"
 delimField1 = arcpy.AddFieldDelimiters(inFC1, fieldName1)
 
 #full list of layers to be clipped to segment buffer for delivery
-inFCList = [r'WestCoast.LAADMIN.LA_Other_Poles', r'WestCoast.LAADMIN.LA_EOP', r'WestCoast.LAADMIN.LA_HLDRoute', r'WestCoast.LAADMIN.LA_Power_Poles',
- r'WestCoast.LAADMIN.LA_Poles', 'WestCoast.LAADMIN.LAVZ_Poles']
+inFCList = []
  
 for item in listSegment:
 	#applies change to segment folder name for re extractions
