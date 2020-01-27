@@ -1,5 +1,5 @@
-'''This is the code that has been used to go through and assess the SDE. Various block of code have been
-written to perform tasks and are detailed below.'''
+'''Various blocks of code used to assess data within an SDE and assist in data remediation processes. 
+Code blocks written to perform tasks in batch and are detailed below.'''
 
 '''Script / code block to take all  feature classes and tables from the SDE connection and copy to a 
 file GDB to be used for the data dictionary'''
@@ -69,9 +69,7 @@ fileGeoDatabase =
 arcpy.env.workspace = fileGeoDatabase
 #Create a list of all FC in GDB
 dataList = arcpy.ListFeatureClasses()
-#
-#Loop through every FC. Use the arcpy GetCount method to get the total number of rows in attribute table. 
-#make nested dictionary with the FC name as the key and the total number of rows as the value! 
+#Loop through every FC. Use the arcpy GetCount method to get the total number of rows in attribute table.  
 for i in dataList:
 	arcpy.management.GetCount(i)[0]
  
