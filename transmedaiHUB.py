@@ -1,6 +1,6 @@
 '''Transmedia Delivery Script:
 
-This script is being developed in order to help streamline Transmedia HUB deliveries to EA.
+This script was developed in order to help streamline Transmedia HUB deliveries to EA.
 
 '''
 
