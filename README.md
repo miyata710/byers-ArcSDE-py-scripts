@@ -3,5 +3,5 @@
 <h2>Note:</h2>
 <p>All data and file paths have been removed from these scripts and replaced with 'xxxxxx'</p>
 <h2>Contributers & Maintainers</h2>
-<p>All scripts were developed by myself and are maintained by me.</p>
+<p>All scripts are developed and maintained by me.</p>
   
